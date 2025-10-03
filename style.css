@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+#player-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Song Info */
+#song-info {
+    margin-bottom: 20px;
+}
+
+#song-title {
+    margin: 0;
+    color: #333;
+    font-size: 1.5em;
+}
+
+#song-artist {
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Controls and Buttons */
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#controls button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 1.2em;
+}
+
+#controls button:hover {
+    background: #0056b3;
+}
+
+/* Progress Bar */
+#progress-container {
+    margin-bottom: 15px;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+#time-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Volume Control */
+#volume-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#volume-bar {
+    width: 100px;
+    height: 4px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: #ccc;
+    border-radius: 5px;
+}
+
+/* Playlist */
+#playlist-container h3 {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+    color: #333;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#playlist li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    transition: background 0.1s;
+}
+
+#playlist li:hover {
+    background-color: #e9f7ff;
+}
+
+#playlist li.active {
+    background-color: #d1eaff;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.song-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-title {
+    font-weight: bold;
+}
+
+.song-artist {
+    font-size: 0.9em;
+    color: #777;
+}
+
+#playlist li.active .song-artist {
+    color: #0056b3;
+}
